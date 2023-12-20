@@ -80,7 +80,7 @@ export default function Craps() {
   ));
 
   return (
-    <div className="bg-landscapeFelt portrait:bg-portraitFelt bg-no-repeat bg-cover bg-center bg-fixed h-screen">
+    <div className="landscapeFelt portraitFelt bg-no-repeat bg-cover bg-center bg-fixed h-screen">
       <div className="w-1/2 h-full mx-auto">
         <ul className="h-full grid grid-cols-2 gap-4 content-center portrait:grid-cols-1">
           {shootDice}

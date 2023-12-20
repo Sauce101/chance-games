@@ -7,3 +7,14 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+.portraitFelt {
+  @media (orientation: portrait) {
+    background-image: url('./assets/craps_images/table/feltm.png');
+  }
+}
+.landscapeFelt {
+  @media (orientation: landscape) {
+    background-image: url('./assets/craps_images/table/felt.png');
+  }
+}

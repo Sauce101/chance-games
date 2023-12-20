@@ -7,10 +7,10 @@ export default {
       tall: { raw: '(min-height: 800px)' },
     },
     extend: {
-      backgroundImage: {
-        landscapeFelt: "url('./src/assets/craps_images/table/felt.png')",
-        portraitFelt: "url('./src/assets/craps_images/table/felt0m.png')",
-      },
+      // backgroundImage: {
+      //   landscapeFelt: "url('./src/assets/craps_images/table/felt.png')",
+      //   portraitFelt: "url('./src/assets/craps_images/table/felt0m.png')",
+      // },
       keyframes: {
         rotationPortrait: {
           from: {
