@@ -8,8 +8,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        landscapeFelt: "url('./src/assets/craps_images/table/felt2560.png')",
-        portraitFelt: "url('./src/assets/craps_images/table/felt1280m.png')",
+        landscapeFelt: "url('./src/assets/craps_images/table/felt.png')",
+        portraitFelt: "url('./src/assets/craps_images/table/felt0m.png')",
       },
       keyframes: {
         rotationPortrait: {
