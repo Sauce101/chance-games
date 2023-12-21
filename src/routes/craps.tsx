@@ -1,6 +1,6 @@
-import LandscapeCraps from '../components/craps/landscape/LandscapeCraps';
+import Craps from '../components/craps/Craps';
 
-const Craps = () => {
-  return <LandscapeCraps />;
+const PlayCraps = () => {
+  return <Craps />;
 };
-export default Craps;
+export default PlayCraps;

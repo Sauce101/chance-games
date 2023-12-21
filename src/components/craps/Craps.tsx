@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { buildDie, rotateDie } from '../DiceBuild';
+import { buildDie, rotateDie } from './DiceBuild';
 
 let die1: string, die2: string;
 

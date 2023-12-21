@@ -5,7 +5,7 @@ import './index.css';
 import Root from './routes/root';
 import ErrorPage from './error-page';
 import Dashboard from './routes/dashboard';
-import Craps from './routes/craps';
+import PlayCraps from './routes/craps';
 import PlayHighCard from './routes/highcard';
 import PlayPokerDice from './routes/pokerdice';
 
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
           { index: true, element: <Dashboard /> },
           {
             path: 'craps',
-            element: <Craps />,
+            element: <PlayCraps />,
           },
           {
             path: 'highcard',
