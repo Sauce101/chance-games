@@ -23,7 +23,7 @@ const Dashboard = () => {
           <div className="flex justify-between bg-red-800 px-4 py-1">
             <h2 className="tall:text-lg tall2x:text-3xl">Craps</h2>
             <div className="my-auto">
-              <Link to="craps">
+              <Link to="/craps">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -51,10 +51,10 @@ const Dashboard = () => {
           }}
         >
           <img src={highlowImg} alt="high card" />
-          <div className="flex justify-between bg-green-900 px-4 py-1">
+          <div className="flex justify-between bg-yellow-700 px-4 py-1">
             <h2 className="tall:text-lg tall2x:text-3xl">High Card</h2>
             <div className="my-auto">
-              <Link to="video-poker">
+              <Link to="/highcard">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -85,7 +85,7 @@ const Dashboard = () => {
           <div className="flex justify-between bg-green-900 px-4 py-1">
             <h2 className="tall:text-lg tall2x:text-3xl">Poker Dice</h2>
             <div className="my-auto">
-              <Link to="video-poker">
+              <Link to="/pokerdice">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -119,7 +119,7 @@ const Dashboard = () => {
           <div className="flex justify-between bg-red-800 px-4 py-1">
             <h2 className="my-auto text-xl lg:text-3xl">Craps</h2>
             <div className="my-auto">
-              <Link to="craps">
+              <Link to="/craps">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -147,10 +147,10 @@ const Dashboard = () => {
           }}
         >
           <img src={highlowImg} alt="high card" />
-          <div className="flex justify-between bg-green-900 px-4 py-1">
+          <div className="flex justify-between bg-yellow-700 px-4 py-1">
             <h2 className="my-auto text-xl lg:text-3xl">High Card</h2>
             <div className="my-auto">
-              <Link to="highcard">
+              <Link to="/highcard">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -181,7 +181,7 @@ const Dashboard = () => {
           <div className="flex justify-between bg-green-900 px-4 py-1">
             <h2 className="my-auto text-xl lg:text-3xl">Poker Dice</h2>
             <div className="my-auto">
-              <Link to="pokerdice">
+              <Link to="/pokerdice">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

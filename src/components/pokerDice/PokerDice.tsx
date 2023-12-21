@@ -135,9 +135,9 @@ const PokerDice = () => {
   const dieListDelt = POSITION.map((spot, index) => (
     <motion.li
       key={index}
-      className="w-36 portrait:w-[18%] portrait:mx-auto p-2"
+      className="w-32 portrait:w-[18%] portrait:mx-auto p-2"
     >
-      <div className="h-8">
+      <div className="md:h-8">
         {spot.hold ? (
           <p className="text-white text-center md:text-xl">HELD</p>
         ) : (
@@ -159,11 +159,11 @@ const PokerDice = () => {
   const dieListDrawn = POSITION.map((spot, index) => (
     <motion.li
       key={index}
-      className="w-36 portrait:w-[18%] portrait:mx-auto p-2"
+      className="w-32 portrait:w-[18%] portrait:mx-auto p-2"
     >
-      <div className="h-8">
+      <div className="md:h-8">
         {spot.hold ? (
-          <p className="text-white text-center">HELD</p>
+          <p className="text-white text-center md:text-xl">HELD</p>
         ) : (
           <p>&nbsp;</p>
         )}
@@ -184,19 +184,19 @@ const PokerDice = () => {
 
   return (
     <div className="flex flex-col justify-center min-h-screen bg-green-950 align-middle">
-      <ul className="flex portrait:flex-col landscape:flex-row align-middle justify-center landscape:gap-6 landscape:mt-8 portrait:mx-auto landscape:mx-8 mb-2">
+      <ul className="flex portrait:flex-col landscape:flex-row align-middle landscape:justify-center portrait:justify-between landscape:gap-6 landscape:mt-8 portrait:mx-auto landscape:mx-8 mb-3">
         {!nextDice ? dieListDelt : dieListDrawn}
       </ul>
       {!nextDice ? (
         <button
-          className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-2"
+          className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-3"
           onClick={drawHand}
         >
           DRAW
         </button>
       ) : (
         <button
-          className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-2"
+          className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-3"
           onClick={dealHand}
         >
           DEAL
