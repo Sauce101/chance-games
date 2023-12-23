@@ -18,3 +18,7 @@
     background-image: url('./assets/craps_images/table/felt.png');
   }
 }
+
+html {
+  -webkit-tap-highlight-color: transparent !important;
+}
