@@ -59,7 +59,7 @@ export default function HighCard() {
   const flipCards = () => setTopcard(!topcard);
 
   const cardSizes: string =
-    'portrait:tall:w-[60%] portrait:tall2x:w-[80%] portrait:w-[40%] rounded-2xl shadow-2xl shadow-green-700/30 mx-auto landscape:w-[80%] landscape:laptop:w-[90%]';
+    'portrait:tall:w-[60%] portrait:tall2x:w-[80%] portrait:w-[50%] rounded-2xl shadow-2xl shadow-green-700/30 mx-auto landscape:w-[70%] landscape:laptop:w-[90%]';
 
   return (
     <div className="flex flex-col justify-center min-h-screen bg-green-950 align-middle">
