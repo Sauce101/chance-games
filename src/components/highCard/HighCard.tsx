@@ -62,8 +62,8 @@ export default function HighCard() {
     'portrait:tall:w-[60%] portrait:tall2x:w-[80%] portrait:w-[50%] rounded-2xl shadow-2xl shadow-green-700/30 mx-auto landscape:w-[70%] landscape:laptop:w-[90%]';
 
   return (
-    <div className="flex flex-col justify-center min-h-screen bg-green-950 align-middle">
-      <div className="landscape:grid landscape:grid-cols-3 portrait:flex portrait:flex-col mx-16 portrait:gap-5 portrait:tall:gap-12 portrait:h-dvh">
+    <div className="flex flex-col justify-center landscape:min-h-screen bg-green-950 align-middle portrait:h-dvh">
+      <div className="landscape:grid landscape:grid-cols-3 portrait:flex portrait:flex-col mx-16 portrait:gap-5 portrait:tall:gap-12">
         <div
           className="mx-auto"
           style={{ perspective: '1000px', transformStyle: 'preserve-3d' }}
