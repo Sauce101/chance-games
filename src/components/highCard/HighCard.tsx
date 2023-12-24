@@ -58,48 +58,38 @@ export default function HighCard() {
 
   const flipCards = () => setTopcard(!topcard);
 
-  // Card size
-  // const cardsize: any = {
-  //   radius: '14px',
-  //   cardWidthL: '70%',
-  //   cardWidthPsm: '32%',
-  //   cardWidthP: '40%',
-  //   cardWidthPmd: '26%',
-  // };
-
-  // const styleOrientation = {
-  //   '@media (orientation: portrait)': {
-  //     display: 'grid',
-  //     // gridTemplateColumns: "1fr",
-  //     gridTemplate: 'repeat(3, 1fr) / 1fr',
-  //     gap: 3,
-  //   },
-  //   '@media (orientation: landscape)': {
-  //     display: 'grid',
-  //     gridTemplate: '1fr / repeat(3, 1fr)',
-  //     gap: 5,
-  //     px: 5,
-  //   },
-  // };
+  const cardSizes: string =
+    'portrait:tall:w-[60%] portrait:tall2x:w-[80%] portrait:w-[40%] rounded-2xl shadow-2xl shadow-green-700/30 mx-auto landscape:w-[80%] landscape:laptop:w-full';
 
   return (
-    <div className="flex flex-col justify-evenly min-h-screen bg-green-950 align-middle">
-      {/* <div className={`${styleOrientation}`}> */}
-      <div className="landscape:grid landscape:grid-cols-3 landscape:gap-3 portrait:flex portrait:flex-col portrait:flex-wrap mx-16 portrait:gap-5">
+    <div className="flex flex-col justify-center min-h-screen bg-green-950 align-middle">
+      <div className="landscape:grid landscape:grid-cols-3 portrait:flex portrait:flex-col mx-16 portrait:gap-5 portrait:tall:gap-12">
         <div
           className="mx-auto"
           style={{ perspective: '1000px', transformStyle: 'preserve-3d' }}
         >
           {topcard && (
-            <PlayerOneData playerOneCard={playerOneCard} nextdeck={nextdeck} />
+            <PlayerOneData
+              playerOneCard={playerOneCard}
+              nextdeck={nextdeck}
+              cardSizes={cardSizes}
+            />
           )}
           {!topcard && (
-            <PlayerOneData playerOneCard={playerOneCard} nextdeck={nextdeck} />
+            <PlayerOneData
+              playerOneCard={playerOneCard}
+              nextdeck={nextdeck}
+              cardSizes={cardSizes}
+            />
           )}
         </div>
 
         <div className="mx-auto" style={{ perspective: '1000px' }}>
-          <DeckCardData flipCards={flipCards} nextdeck={nextdeck} />
+          <DeckCardData
+            flipCards={flipCards}
+            nextdeck={nextdeck}
+            cardSizes={cardSizes}
+          />
         </div>
 
         <div

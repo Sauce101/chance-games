@@ -3,14 +3,11 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     screens: {
-      mobile: { max: '1023px' },
       tall: { raw: '(min-height: 800px)' },
+      tall2x: { raw: '(min-height: 1200px)' },
+      laptop: '1024px',
     },
     extend: {
-      // backgroundImage: {
-      //   landscapeFelt: "url('./src/assets/craps_images/table/felt.png')",
-      //   portraitFelt: "url('./src/assets/craps_images/table/felt0m.png')",
-      // },
       keyframes: {
         rotationPortrait: {
           from: {
