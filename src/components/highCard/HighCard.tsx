@@ -97,10 +97,18 @@ export default function HighCard() {
           className="mx-auto"
         >
           {topcard && (
-            <PlayerTwoData playerTwoCard={playerTwoCard} nextdeck={nextdeck} />
+            <PlayerTwoData
+              playerTwoCard={playerTwoCard}
+              nextdeck={nextdeck}
+              cardSizes={cardSizes}
+            />
           )}
           {!topcard && (
-            <PlayerTwoData playerTwoCard={playerTwoCard} nextdeck={nextdeck} />
+            <PlayerTwoData
+              playerTwoCard={playerTwoCard}
+              nextdeck={nextdeck}
+              cardSizes={cardSizes}
+            />
           )}
         </div>
       </div>
