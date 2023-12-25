@@ -12,8 +12,8 @@ export default defineConfig({
         enabled: true,
       },
       manifest: {
-        name: 'Cards Redux',
-        short_name: 'Cards Redux',
+        name: 'Chance Games',
+        short_name: 'Chance Games',
         start_url: '/',
         display: 'standalone',
         orientation: 'any',
