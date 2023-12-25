@@ -20,6 +20,7 @@ export default defineConfig({
         background_color: '#000000',
         lang: 'en',
         scope: '/',
+        theme_color: '#ffffff',
         icons: [
           {
             src: '/maskable.png',
@@ -28,27 +29,16 @@ export default defineConfig({
             purpose: 'maskable',
           },
           {
-            src: '/logo192.png',
+            src: '/pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '/logo256.png',
-            sizes: '256x256',
-            type: 'image/png',
-          },
-          {
-            src: '/logo384.png',
-            sizes: '384x384',
-            type: 'image/png',
-          },
-          {
-            src: '/logo512.png',
+            src: '/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
         ],
-        theme_color: '#57534e',
       },
     }),
   ],
