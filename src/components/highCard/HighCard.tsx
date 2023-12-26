@@ -1,21 +1,25 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from 'react';
 import { freshDeck } from '../../assets/playingCards/decks/PlainDeck';
 import PlayerOneData from './cardData/PlayerOneData';
 import PlayerTwoData from './cardData/PlayerTwoData';
 import DeckCardData from './cardData/DeckCardData';
 
-let playerOneDeck: any,
-  playerTwoDeck: any,
-  playerOneCard: any,
-  playerTwoCard: any,
-  deckMidpoint: any;
+// type cardTypes = {
+//   playerOneDeck: string[]
+//   playerTwoDeck: string[]
+// }
+
+let playerOneDeck: string[],
+  playerTwoDeck: string[],
+  deckMidpoint: number,
+  playerOneCard: string | undefined,
+  playerTwoCard: string | undefined;
 
 const cards = freshDeck;
 
 const StartGame = () => {
-  const deck: any = cards;
+  const deck = cards;
   const numberOfCards = deck.length;
 
   const shuffle = () => {

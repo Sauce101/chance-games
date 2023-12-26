@@ -43,17 +43,7 @@ const StartDice = () => {
 };
 StartDice();
 
-// Die size
-// const cardsize: any = {
-//   radius: "20%",
-//   cardWidthL: "55%",
-//   cardWidthP: "20%",
-// }
-
 const PokerDice = () => {
-  // const [topface, setTopface] = useState(() => {
-  //   return true;
-  // });
   const [nextDice, setNextDice] = useState(() => {
     return false;
   });
@@ -75,7 +65,6 @@ const PokerDice = () => {
 
   const dealHand = () => {
     setNextDice(false);
-    // setTopface(true);
     setHoldState1(false);
     setHoldState2(false);
     setHoldState3(false);
@@ -147,13 +136,8 @@ const PokerDice = () => {
       </div>
       <motion.div
         className="animate-[pokerDiceRotate_.5s_1_ease-out] radius-[20%]"
-        // animate={nextDice ? 'visible' : 'hidden'}
-        // initial="hidden"
-        // variants={item}
-        // transition={{ duration: 0.6 }}
         onClick={spot.holdset}
       >
-        {/* <img src={spot.play} /> */}
         {spot.hold ? (
           <img
             src={spot.play}
@@ -183,13 +167,7 @@ const PokerDice = () => {
         className={`${
           !spot.hold ? 'animate-[pokerDiceRotate_.5s_1_ease-out]' : ''
         } radius-[20%]`}
-        // animate={spot.hold ? 'visible' : 'hidden'}
-        // initial="hidden"
-        // variants={item}
-        // transition={{ duration: 0.6 }}
       >
-        {/* <img src={spot.play} /> */}
-        {/* <img src={spot.play} /> */}
         {spot.hold ? (
           <img
             src={spot.play}

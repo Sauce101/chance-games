@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { buildDie, rotateDie } from './DiceBuild';
@@ -61,7 +60,7 @@ export default function Craps() {
         }}
         className={`${dieSize}`}
       >
-        {DIE.map((spot: any, index: number) => (
+        {DIE.map((spot, index: number) => (
           <div
             // dieFace
             key={index}
@@ -89,4 +88,3 @@ export default function Craps() {
     </div>
   );
 }
-// `url(${m5})`
