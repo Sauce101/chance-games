@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { pokerDie } from './PokeDiceBuild';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 const numberOfSides = pokerDie.length;
 const shuffle = () => {
@@ -122,7 +122,7 @@ const PokerDice = () => {
 
   // Delt
   const dieListDelt = POSITION.map((spot, index) => (
-    <motion.li
+    <li
       key={index}
       className="landscape:w-32 portrait:w-[18%] portrait:mx-auto p-2"
     >
@@ -133,7 +133,7 @@ const PokerDice = () => {
           <p>&nbsp;</p>
         )}
       </div>
-      <motion.div
+      <div
         className="animate-[pokerDiceRotate_.5s_1_ease-out] radius-[20%]"
         onClick={spot.holdset}
       >
@@ -145,13 +145,13 @@ const PokerDice = () => {
         ) : (
           <img src={spot.play} />
         )}
-      </motion.div>
-    </motion.li>
+      </div>
+    </li>
   ));
 
   // Drawn
   const dieListDrawn = POSITION.map((spot, index) => (
-    <motion.li
+    <li
       key={index}
       className="landscape:w-32 portrait:w-[18%] portrait:mx-auto p-2"
     >
@@ -179,7 +179,7 @@ const PokerDice = () => {
           <img src={spot.play} />
         )}
       </div>
-    </motion.li>
+    </li>
   ));
 
   return (
