@@ -162,10 +162,11 @@ const PokerDice = () => {
           <p>&nbsp;</p>
         )}
       </div>
+      {/* Motion */}
       <div
         className={`${
           !spot.hold
-            ? 'animate-[pokerDiceRotate_.5s_1_ease-out] radius-[20%]'
+            ? 'animate-[wiggle_.5s_1_ease-out] radius-[20%]'
             : 'radius-[20%]'
         }`}
       >
@@ -190,16 +191,6 @@ const PokerDice = () => {
         <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
           {nextDice ? dieListDrawn : dieListDelt}
         </ul>
-
-        {/* {!nextDice ? (
-          <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
-            dieListDelt
-          </ul>
-        ) : (
-          <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
-            dieListDrawn
-          </ul>
-        )} */}
       </div>
       <div className="mx-auto portrait:mt-4">
         {!nextDice ? (
