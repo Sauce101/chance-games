@@ -182,7 +182,7 @@ const PokerDice = () => {
   ));
 
   return (
-    <div className="flex flex-col justify-center min-h-screen bg-green-950">
+    <motion.div className="flex flex-col justify-center min-h-screen bg-green-950">
       {/* <div className=""> */}
       <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
         {!nextDice ? dieListDelt : dieListDrawn}
@@ -203,7 +203,7 @@ const PokerDice = () => {
         </button>
       )}
       {/* </div> */}
-    </div>
+    </motion.div>
   );
 };
 export default PokerDice;
