@@ -183,7 +183,7 @@ const PokerDice = () => {
   return (
     <div className="flex flex-col justify-center min-h-screen bg-green-950">
       {/* Dice */}
-      <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
+      <ul className="grid portrait:grid-cols-1 landscape:grid-cols-5 justify-items-center portrait:gap-5">
         {!nextDice ? dieListDelt : dieListDrawn}
       </ul>
       {/* Button */}
