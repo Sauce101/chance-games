@@ -124,9 +124,8 @@ const PokerDice = () => {
   const dieListDelt = POSITION.map((spot, index) => (
     <motion.li
       key={index}
-      className="w-32 portrait:w-16 portrait:mx-auto p-2 portrait:my-1"
+      className="w-32 portrait:w-[18%] portrait:mx-auto p-2 portrait:h-auto"
     >
-      {/* Held text */}
       <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
           <p className="text-white text-center md:text-xl">HELD</p>
@@ -154,7 +153,7 @@ const PokerDice = () => {
   const dieListDrawn = POSITION.map((spot, index) => (
     <motion.li
       key={index}
-      className="w-32 portrait:w-16 portrait:mx-auto p-2 portrait:my-1"
+      className="w-32 portrait:w-[18%] portrait:mx-auto p-2 portrait:h-auto"
     >
       <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
@@ -165,8 +164,10 @@ const PokerDice = () => {
       </div>
       <div
         className={`${
-          !spot.hold ? 'animate-[pokerDiceRotate_.5s_1_ease-out]' : ''
-        } radius-[20%]`}
+          !spot.hold
+            ? 'animate-[pokerDiceRotate_.5s_1_ease-out] radius-[20%]'
+            : 'radius-[20%]'
+        }`}
       >
         {spot.hold ? (
           <img
@@ -182,28 +183,26 @@ const PokerDice = () => {
 
   return (
     <div className="flex flex-col justify-center min-h-screen bg-green-950">
-      {/* Dice */}
-      <ul className="grid portrait:grid-cols-1 landscape:grid-cols-5 justify-items-center portrait:gap-5">
+      {/* <div className=""> */}
+      <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
         {!nextDice ? dieListDelt : dieListDrawn}
       </ul>
-      {/* Button */}
-      <div className="mx-auto m-2">
-        {!nextDice ? (
-          <button
-            className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-4"
-            onClick={drawHand}
-          >
-            DRAW
-          </button>
-        ) : (
-          <button
-            className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-4"
-            onClick={dealHand}
-          >
-            DEAL
-          </button>
-        )}
-      </div>
+      {!nextDice ? (
+        <button
+          className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-4"
+          onClick={drawHand}
+        >
+          DRAW
+        </button>
+      ) : (
+        <button
+          className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-4"
+          onClick={dealHand}
+        >
+          DEAL
+        </button>
+      )}
+      {/* </div> */}
     </div>
   );
 };
