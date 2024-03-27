@@ -1,6 +1,6 @@
-import PokerDice from '../components/pokerDice/PokerDice';
+import PokerDiceB from '../components/pokerDice/PokerDiceB';
 
 const PlayPokerDice = () => {
-  return <PokerDice />;
+  return <PokerDiceB />;
 };
 export default PlayPokerDice;
