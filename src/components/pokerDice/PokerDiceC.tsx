@@ -182,28 +182,43 @@ const PokerDice = () => {
   ));
 
   return (
-    <motion.div className="flex flex-col justify-center min-h-screen bg-green-950">
-      {/* <div className=""> */}
-      <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
-        {!nextDice ? dieListDelt : dieListDrawn}
-      </ul>
-      {!nextDice ? (
-        <button
-          className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-4"
-          onClick={drawHand}
-        >
-          DRAW
-        </button>
-      ) : (
-        <button
-          className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-4"
-          onClick={dealHand}
-        >
-          DEAL
-        </button>
-      )}
-      {/* </div> */}
-    </motion.div>
+    <div className="flex flex-col justify-center min-h-screen bg-green-950">
+      <div>
+        {/* <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
+          {!nextDice ? dieListDelt : dieListDrawn}
+        </ul> */}
+        <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
+          {nextDice ? dieListDrawn : dieListDelt}
+        </ul>
+
+        {/* {!nextDice ? (
+          <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
+            dieListDelt
+          </ul>
+        ) : (
+          <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
+            dieListDrawn
+          </ul>
+        )} */}
+      </div>
+      <div className="mx-auto portrait:mt-4">
+        {!nextDice ? (
+          <button
+            className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-4"
+            onClick={drawHand}
+          >
+            DRAW
+          </button>
+        ) : (
+          <button
+            className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-4"
+            onClick={dealHand}
+          >
+            DEAL
+          </button>
+        )}
+      </div>
+    </div>
   );
 };
 export default PokerDice;
