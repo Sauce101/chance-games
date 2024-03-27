@@ -124,8 +124,9 @@ const PokerDice = () => {
   const dieListDelt = POSITION.map((spot, index) => (
     <motion.li
       key={index}
-      className="w-32 portrait:w-[18%] portrait:mx-auto p-2 portrait:h-auto"
+      className="w-32 portrait:w-[18%] portrait:mx-auto p-2 portrait:my-1"
     >
+      {/* Held text */}
       <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
           <p className="text-white text-center md:text-xl">HELD</p>
@@ -153,7 +154,7 @@ const PokerDice = () => {
   const dieListDrawn = POSITION.map((spot, index) => (
     <motion.li
       key={index}
-      className="w-32 portrait:w-[18%] portrait:mx-auto p-2 portrait:h-auto"
+      className="w-32 portrait:w-[18%] portrait:mx-auto p-2 portrait:my-1"
     >
       <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
@@ -181,10 +182,11 @@ const PokerDice = () => {
 
   return (
     <div className="flex flex-col justify-center min-h-screen bg-green-950">
-      {/* <div className=""> */}
+      {/* Dice */}
       <ul className="grid portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center portrait:gap-5">
         {!nextDice ? dieListDelt : dieListDrawn}
       </ul>
+      {/* Button */}
       <div className="mx-auto m-2">
         {!nextDice ? (
           <button
@@ -202,7 +204,6 @@ const PokerDice = () => {
           </button>
         )}
       </div>
-      {/* </div> */}
     </div>
   );
 };
