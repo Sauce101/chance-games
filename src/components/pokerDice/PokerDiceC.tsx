@@ -137,14 +137,21 @@ const PokerDice = () => {
         className="animate-[pokerDiceRotate_.5s_1_ease-out] radius-[20%]"
         onClick={spot.holdset}
       >
-        {spot.hold ? (
+        {/* {spot.hold ? (
           <img
             src={spot.play}
             className="outline outline-offset-2 outline-yellow-400"
           />
         ) : (
           <img src={spot.play} />
-        )}
+        )} */}
+        <img
+          src={spot.play}
+          alt="..."
+          className={`${
+            spot.hold ? 'outline outline-offset-2 outline-yellow-400' : ''
+          }`}
+        />
       </div>
     </li>
   ));
@@ -170,14 +177,21 @@ const PokerDice = () => {
             : 'radius-[20%]'
         }`}
       >
-        {spot.hold ? (
+        {/* {spot.hold ? (
           <img
             src={spot.play}
             className="outline outline-offset-2 outline-yellow-400"
           />
         ) : (
           <img src={spot.play} />
-        )}
+        )} */}
+        <img
+          src={spot.play}
+          alt="..."
+          className={`${
+            spot.hold ? 'outline outline-offset-2 outline-yellow-400' : ''
+          }`}
+        />
       </div>
     </li>
   ));
