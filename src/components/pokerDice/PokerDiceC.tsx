@@ -124,7 +124,7 @@ const PokerDice = () => {
   const dieListDelt = POSITION.map((spot, index) => (
     <motion.li
       key={index}
-      className="w-32 portrait:w-[18%] portrait:mx-auto p-2 portrait:h-auto"
+      className="landscape:w-32 portrait:w-[18%] portrait:mx-auto p-2"
     >
       <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
@@ -153,7 +153,7 @@ const PokerDice = () => {
   const dieListDrawn = POSITION.map((spot, index) => (
     <motion.li
       key={index}
-      className="w-32 portrait:w-[18%] portrait:mx-auto p-2 portrait:h-auto"
+      className="landscape:w-32 portrait:w-[18%] portrait:mx-auto p-2"
     >
       <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
