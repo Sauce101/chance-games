@@ -187,21 +187,21 @@ const PokerDice = () => {
           {nextDice ? dieListDrawn : dieListDelt}
         </ul>
       </div> */}
-      <ul className="grid portrait:grid-cols-1 portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center">
+      {/* <ul className="grid portrait:grid-cols-1 portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center">
         {nextDice ? dieListDrawn : dieListDelt}
-      </ul>
+      </ul> */}
       {/* Portrait */}
-      {/* <div className="landscape:hidden">
+      <div className="landscape:hidden">
         <ul className="grid grid-cols-1 grid-rows-5 justify-items-center">
           {nextDice ? dieListDrawn : dieListDelt}
         </ul>
-      </div> */}
+      </div>
       {/* Landscape */}
-      {/* <div className="portrait:hidden">
+      <div className="portrait:hidden">
         <ul className="grid grid-cols-5 justify-items-center">
           {nextDice ? dieListDrawn : dieListDelt}
         </ul>
-      </div> */}
+      </div>
       {/* Button */}
       <div className="mx-auto portrait:mt-4">
         {!nextDice ? (
