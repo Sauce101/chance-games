@@ -148,9 +148,9 @@ const PokerDice = () => {
         <img
           src={spot.play}
           alt="..."
-          className={`${
-            spot.hold ? 'outline outline-offset-2 outline-yellow-400' : ''
-          }`}
+          // className={`${
+          //   spot.hold ? 'outline outline-offset-2 outline-yellow-400' : ''
+          // }`}
         />
       </div>
     </li>
@@ -188,9 +188,9 @@ const PokerDice = () => {
         <img
           src={spot.play}
           alt="..."
-          className={`${
-            spot.hold ? 'outline outline-offset-2 outline-yellow-400' : ''
-          }`}
+          // className={`${
+          //   spot.hold ? 'outline outline-offset-2 outline-yellow-400' : ''
+          // }`}
         />
       </div>
     </li>
