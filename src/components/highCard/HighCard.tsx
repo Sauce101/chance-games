@@ -67,9 +67,9 @@ export default function HighCard() {
 
   return (
     <div className="flex flex-col justify-center min-h-screen bg-green-950 align-middle">
-      <div className="landscape:grid landscape:grid-cols-3 portrait:flex portrait:flex-col mx-16 portrait:gap-5 portrait:tall:gap-12">
+      <div className="landscape:grid landscape:grid-cols-3 portrait:grid-cols-1 portrait:grid-rows-3 mx-16 portrait:gap-8 portrait:tall:gap-12">
         <div
-          className="mx-auto"
+          className="mx-auto my-2"
           style={{ perspective: '1000px', transformStyle: 'preserve-3d' }}
         >
           {topcard && (
@@ -98,7 +98,7 @@ export default function HighCard() {
 
         <div
           style={{ perspective: '1000px', transformStyle: 'preserve-3d' }}
-          className="mx-auto"
+          className="mx-auto my-2"
         >
           {topcard && (
             <PlayerTwoData
