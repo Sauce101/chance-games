@@ -182,23 +182,15 @@ const PokerDice = () => {
 
   return (
     <div className="flex flex-col justify-center min-h-screen bg-green-950">
-      {/* <div>
-        <ul className="landscape:grid portrait:flex portrait:flex-col landscape:grid-cols-5 justify-items-center portrait:gap-5">
-          {nextDice ? dieListDrawn : dieListDelt}
-        </ul>
-      </div> */}
-      {/* <ul className="grid portrait:grid-cols-1 portrait:grid-rows-5 landscape:grid-cols-5 justify-items-center">
-        {nextDice ? dieListDrawn : dieListDelt}
-      </ul> */}
       {/* Portrait */}
       <div className="landscape:hidden">
-        <ul className="grid grid-cols-1 grid-rows-5 justify-items-center">
+        <ul className="grid grid-cols-1 grid-rows-5">
           {nextDice ? dieListDrawn : dieListDelt}
         </ul>
       </div>
       {/* Landscape */}
       <div className="portrait:hidden">
-        <ul className="grid grid-cols-5 justify-items-center">
+        <ul className="grid grid-cols-5">
           {nextDice ? dieListDrawn : dieListDelt}
         </ul>
       </div>
