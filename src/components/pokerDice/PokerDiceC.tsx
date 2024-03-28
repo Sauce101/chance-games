@@ -180,17 +180,21 @@ const PokerDice = () => {
     </li>
   ));
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const diceRoll: any = nextDice ? dieListDrawn : dieListDelt;
+
   return (
     <div className="flex flex-col justify-center min-h-screen bg-green-950">
       {/* Portrait */}
       <div className="landscape:hidden">
-        <ul className="grid grid-cols-1 grid-rows-5">
-          {nextDice ? dieListDrawn : dieListDelt}
+        <ul className="grid grid-cols-1 grid-rows-5 place-items-center">
+          {/* {nextDice ? dieListDrawn : dieListDelt} */}
+          {diceRoll}
         </ul>
       </div>
       {/* Landscape */}
       <div className="portrait:hidden">
-        <ul className="grid grid-cols-5">
+        <ul className="grid grid-cols-5 place-items-center">
           {nextDice ? dieListDrawn : dieListDelt}
         </ul>
       </div>
