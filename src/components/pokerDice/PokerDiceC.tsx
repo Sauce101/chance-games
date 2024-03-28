@@ -124,7 +124,7 @@ const PokerDice = () => {
   const dieListDelt = POSITION.map((spot, index) => (
     <li
       key={index}
-      className="landscape:w-32 portrait:w-[18%] portrait:mx-auto p-2"
+      className="landscape:w-32 portrait:w-[20%] portrait:mx-auto p-2"
     >
       {/* <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
@@ -137,20 +137,12 @@ const PokerDice = () => {
         className="animate-[pokerDiceRotate_.5s_1_ease-out] radius-[20%]"
         onClick={spot.holdset}
       >
-        {/* {spot.hold ? (
-          <img
-            src={spot.play}
-            className="outline outline-offset-2 outline-yellow-400"
-          />
-        ) : (
-          <img src={spot.play} />
-        )} */}
         <img
           src={spot.play}
           alt="..."
-          // className={`${
-          //   spot.hold ? 'outline outline-offset-2 outline-yellow-400' : ''
-          // }`}
+          className={`${
+            spot.hold ? 'outline outline-offset-2 outline-yellow-400' : ''
+          }`}
         />
       </div>
     </li>
@@ -160,7 +152,7 @@ const PokerDice = () => {
   const dieListDrawn = POSITION.map((spot, index) => (
     <li
       key={index}
-      className="landscape:w-32 portrait:w-[18%] portrait:mx-auto p-2"
+      className="landscape:w-32 portrait:w-[20%] portrait:mx-auto p-2"
     >
       {/* <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
@@ -177,20 +169,12 @@ const PokerDice = () => {
             : 'radius-[20%]'
         }`}
       >
-        {/* {spot.hold ? (
-          <img
-            src={spot.play}
-            className="outline outline-offset-2 outline-yellow-400"
-          />
-        ) : (
-          <img src={spot.play} />
-        )} */}
         <img
           src={spot.play}
           alt="..."
-          // className={`${
-          //   spot.hold ? 'outline outline-offset-2 outline-yellow-400' : ''
-          // }`}
+          className={`${
+            spot.hold ? 'outline outline-offset-2 outline-yellow-400' : ''
+          }`}
         />
       </div>
     </li>
@@ -205,7 +189,7 @@ const PokerDice = () => {
       </div> */}
       {/* Portrait */}
       <div className="landscape:hidden">
-        <ul className="flex flex-col justify-items-center gap-5">
+        <ul className="grid grid-cols-1 grid-rows-5 justify-items-center">
           {nextDice ? dieListDrawn : dieListDelt}
         </ul>
       </div>
