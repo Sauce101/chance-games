@@ -126,13 +126,13 @@ const PokerDice = () => {
       key={index}
       className="landscape:w-32 portrait:w-[18%] portrait:mx-auto p-2"
     >
-      <div className="md:h-8 portrait:hidden">
+      {/* <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
           <p className="text-white text-center md:text-xl">HELD</p>
         ) : (
           <p>&nbsp;</p>
         )}
-      </div>
+      </div> */}
       <div
         className="animate-[pokerDiceRotate_.5s_1_ease-out] radius-[20%]"
         onClick={spot.holdset}
@@ -162,13 +162,13 @@ const PokerDice = () => {
       key={index}
       className="landscape:w-32 portrait:w-[18%] portrait:mx-auto p-2"
     >
-      <div className="md:h-8 portrait:hidden">
+      {/* <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
           <p className="text-white text-center md:text-xl">HELD</p>
         ) : (
           <p>&nbsp;</p>
         )}
-      </div>
+      </div> */}
       {/* Motion */}
       <div
         className={`${
