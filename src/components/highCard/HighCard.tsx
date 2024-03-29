@@ -88,7 +88,7 @@ export default function HighCard() {
           )}
         </div>
 
-        <div className="mx-auto" style={{ perspective: '1000px' }}>
+        <div className="mx-auto my-2" style={{ perspective: '1000px' }}>
           <DeckCardData
             flipCards={flipCards}
             nextdeck={nextdeck}
