@@ -124,7 +124,7 @@ const PokerDice = () => {
   const dieListDelt = POSITION.map((spot, index) => (
     <li
       key={index}
-      className="landscape:w-32 portrait:w-[20%] portrait:mx-auto p-2"
+      className="p-2 portrait:mx-auto portrait:w-[20%] landscape:w-32"
     >
       {/* <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
@@ -134,7 +134,7 @@ const PokerDice = () => {
         )}
       </div> */}
       <div
-        className="animate-[pokerDiceRotate_.5s_1_ease-out] radius-[20%]"
+        className="radius-[20%] animate-[pokerDiceRotate_.5s_1_ease-out]"
         onClick={spot.holdset}
       >
         <img
@@ -152,7 +152,7 @@ const PokerDice = () => {
   const dieListDrawn = POSITION.map((spot, index) => (
     <li
       key={index}
-      className="landscape:w-32 portrait:w-[20%] portrait:mx-auto p-2"
+      className="p-2 portrait:mx-auto portrait:w-[20%] landscape:w-32"
     >
       {/* <div className="md:h-8 portrait:hidden">
         {spot.hold ? (
@@ -165,7 +165,7 @@ const PokerDice = () => {
       <div
         className={`${
           !spot.hold
-            ? 'animate-[wiggle_.5s_1_ease-out] radius-[20%]'
+            ? 'radius-[20%] animate-[wiggle_.5s_1_ease-out]'
             : 'radius-[20%]'
         }`}
       >
@@ -184,7 +184,7 @@ const PokerDice = () => {
   const diceRoll: any = nextDice ? dieListDrawn : dieListDelt;
 
   return (
-    <div className="flex flex-col justify-center min-h-screen bg-green-950">
+    <div className="flex min-h-screen flex-col justify-center bg-green-950">
       {/* Portrait */}
       <div className="landscape:hidden">
         <ul className="grid grid-cols-1 grid-rows-5 place-items-center">
@@ -202,14 +202,14 @@ const PokerDice = () => {
       <div className="mx-auto portrait:mt-4">
         {!nextDice ? (
           <button
-            className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-4"
+            className="mx-auto w-32 rounded-lg border-orange-950 bg-orange-400 text-white portrait:mt-4 landscape:mt-8"
             onClick={drawHand}
           >
             DRAW
           </button>
         ) : (
           <button
-            className="w-32 bg-orange-400 text-white mx-auto landscape:mt-8 border-orange-950 rounded-lg portrait:mt-4"
+            className="mx-auto w-32 rounded-lg border-orange-950 bg-orange-400 text-white portrait:mt-4 landscape:mt-8"
             onClick={dealHand}
           >
             DEAL
